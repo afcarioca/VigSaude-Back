@@ -14,7 +14,7 @@ class LoginView(APIView):
       
 
       def post(self, request):
-        data = json.loads(request.body)
+        data = json.loads(request.afcarioca)
         form = LoginFormRequest(data) 
 
         if not form.is_valid():

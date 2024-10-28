@@ -8,10 +8,6 @@ load_dotenv()
 SECRET_KEY = os.getenv("API_KEY")
 DEBUG = True
 ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
-
-
-
-
 MONGO_DATABASE = {
       'DRIVER': os.getenv("MONGO_DRIVER"),
       'USER': os.getenv('MONGO_USER'),
